@@ -1,0 +1,331 @@
+
+:root{
+    --linear-bg: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue:  #E7F5FF;
+    --warm-black: #201E1C;
+    --black-soft: #808080;
+    --grey: #BABABA;
+    --of-white: #FAF8F7;
+    --just-white: #FFFFFF; 
+    --font1: 'DM Sans', sans-serif;
+    --font2: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font1);
+
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: var(--linear-bg);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center; 
+}
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--of-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, .16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    
+}
+
+
+.header--button__img {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--of-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container--background {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main-exchange-container--img{
+    width: inherit;
+    height: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575; 
+}
+
+
+/* --- Seccion de tablas --- */
+
+/* Tabla de monedas */
+
+.table-section {
+    width: 288px;
+    height: 217px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100%;
+    
+}
+
+
+
+.table-section--container {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.table-section--container--table {
+    height: 126px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    font-size: 1.6rem;
+    line-height: 32px;
+    grid-template-columns: repeat(auto-fit, 50%);
+    background: var(--just-white);
+    border-radius: 10px;
+}
+
+.table-section--container h3 {
+    text-align: start;
+    margin-left: 4px;
+    padding: 8px;
+    font-size: 1.8rem;
+    color: var(--bitcoin-orange);
+    line-height: 2.3rem;
+}
+
+.table-section--container h3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10%;
+    background: var(--bitcoin-orange);
+    margin-bottom: 10px;
+}
+
+.table-section--container__font-inter {
+    font-family: var(--font2);
+}
+
+.table-section--container--table--left div {
+    color: var(--grey);
+    text-align: start;  
+    padding-left: 8px;
+}
+
+.table-section--container--table--right {
+    color: #757575;
+}
+
+.table-section--container--table--right span img {
+    padding-left: 10px;
+}
+
+.table-section--container-update p {
+    background: var(--soft-orange);
+    font-size: 1.2rem;
+    color: black;
+    width: 170.67px;
+    height: 31px;
+    margin: 0 auto;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+
+.table-section--container-update p span{
+    font-weight: bold;
+    color: black;
+}
+
+/* Tabla de comisiones */
+
+
+.table-section2 {
+    width: 288px;
+    height: 217px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.table-section2--container {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.table-section2--container--table {
+    height: 126px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    font-size: 1.6rem;
+    line-height: 32px;
+    grid-template-columns: repeat(auto-fit, 50%);
+    background: var(--just-white);
+    border-radius: 10px;
+}
+
+.table-section2--container h3 {
+    text-align: start;
+    margin-left: 4px;
+    padding: 8px;
+    font-size: 1.8rem;
+    color: var(--secondary-blue);
+    line-height: 2.3rem;
+}
+
+.table-section2--container h3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10%;
+    background: var(--secondary-blue);
+    margin-bottom: 10px;
+}
+
+.table-section2--container__font-inter {
+    font-family: var(--font2);
+}
+
+.table-section2--container--table--left div {
+    color: var(--grey);
+    text-align: start;  
+    padding-left: 8px;
+}
+
+.table-section2--container--table--right {
+    color: #757575;
+}
+
+.table-section2--container--table--right span img {
+    padding-left: 10px;
+}
+
+.table-section2--container-update p {
+    background: var(--soft-blue);
+    font-size: 1.2rem;
+    color: black;
+    width: 170.67px;
+    height: 31px;
+    margin: 0 auto;
+    padding-top: 8px;
+    border-radius: 10px;
+}
+
+.table-section2--container-update p span{
+    font-weight: bold;
+    color: black;
+}
+

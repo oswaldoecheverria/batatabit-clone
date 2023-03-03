@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header>
+      <img src="{% static 'assets/images/logo.svg' %}" alt="" />
+      <div class="header--title-container">
+        <h1>La próxima recolución en el intercambio de criptomonedas</h1>
+        <p>
+          Batatabit te ayuda a navegar entre los diferentes precios y tendencias
+        </p>
+        <a href="" class="header--button"
+          >Conoce Nuestros Planes
+          <span
+            ><img
+              class="header--button__img"
+              src="{% static 'assets/icons/vector-flecha-baja.svg' %}"
+              alt="" /></span
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-exchange-container">
+        <figure class="main-exchange-container--background">
+          <img
+            class="main-exchange-container--img"
+            src="{% static 'assets/images/bitcoin.svg'  %}"
+            alt=""
+          />
+        </figure>
+
+        <div class="main-exchange-container--title">
+          <h2>Visibilizamos todas las tasas de cambio</h2>
+          <p>
+            Traemos información en tiempo real de las casas de cambio y las
+            monedas más importantes del mundo.
+          </p>
+        </div>
+      </section>
+
+      <!-- Tabla de monedas -->
+
+      <section class="table-section">
+        <span class="table-section--span table-section--span-left"></span>
+
+        <section class="table-section--container">
+          <h3>Monedas</h3>
+
+          <section
+            class="table-section--container--table table-section--container__font-inter"
+          >
+            <section class="table-section--container--table--left">
+              <div>Bitcoin</div>
+              <div>Ethereum</div>
+              <div>Ripple</div>
+              <div>Ripple</div>
+            </section>
+
+            <section class="table-section--container--table--right">
+              <div>
+                $ 1.96
+                <span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 0.07<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-alza.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 2.15<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 4.96<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+            </section>
+          </section>
+
+          <div
+            class="table-section--container-update table-section--container__font-inter"
+          >
+            <p>
+              <span><strong>Actualizado:</strong> </span> 19 Julio 23:45
+            </p>
+          </div>
+        </section>
+
+        <span class="table-section--span table-section--span-right"></span>
+      </section>
+
+      <!-- Tabla de comisiones -->
+      <section class="table-section2">
+        <span class="table-section2--span table-section--span-left"></span>
+
+        <section class="table-section2--container">
+          <h3>Comisiones</h3>
+
+          <section
+            class="table-section2--container--table table-section--container__font-inter"
+          >
+            <section class="table-section2--container--table--left">
+              <div>Bitrade</div>
+              <div>Bitpreco</div>
+              <div>Novadax</div>
+              <div>Coinnext</div>
+            </section>
+
+            <section class="table-section2--container--table--right">
+              <div>
+                $ 12.96
+                <span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 13.07<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-alza.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 13.15<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+              <div>
+                $ 14.96<span
+                  ><img
+                    src="{% static 'assets/icons/tendencia-baja.svg'%}"
+                    alt=""
+                /></span>
+              </div>
+            </section>
+          </section>
+
+          <div
+            class="table-section2--container-update table-section--container__font-inter"
+          >
+            <p>
+              <span><strong>Actualizado:</strong> </span> 19 Julio 23:45
+            </p>
+          </div>
+        </section>
+
+        <span class="table-section2--span table-section--span-right"></span>
+      </section>
+
+
+      
+
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
