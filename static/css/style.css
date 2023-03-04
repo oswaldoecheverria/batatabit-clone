@@ -7,11 +7,13 @@
     --soft-blue:  #E7F5FF;
     --warm-black: #201E1C;
     --black-soft: #808080;
+    --black: #282623;
     --grey: #BABABA;
     --of-white: #FAF8F7;
     --just-white: #FFFFFF; 
     --font1: 'DM Sans', sans-serif;
     --font2: 'Inter', sans-serif;
+    --shadow: 0 4px 8px rgba(0, 0, 0, .16);
 }
 
 *{
@@ -329,3 +331,78 @@ main {
     color: black;
 }
 
+/* --- Seccion de beneficios --- */
+
+.main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+}
+
+.product-detail--title {
+    width: 30%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black-soft);
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px; 
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.product-detail--card span img{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.product--card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem ;
+    color: var(--black-soft);
+}
