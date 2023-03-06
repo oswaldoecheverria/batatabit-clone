@@ -167,6 +167,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 
@@ -426,11 +427,14 @@ main {
     text-align: center;
     min-width: 320px;
     height: 50vh;
-    background-image: url('../assets/images/bitcoinbaby2x.jpg');
-    position: center;
+    background-image: url('../assets/images/imagen-chica-small.jpg');
+    background-position: 50% 40%;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
+
+
 
 .bitcoin-img-container h2{
     padding-top: 60px;
@@ -604,4 +608,62 @@ footer .left ul{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+/*  ----  Responsive ----  */
+
+/*Seccion de tablas */
+@media (min-width: 426px){
+    
+    
+    .main-table{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .table-section{
+        margin: 30px 10px;
+    }
+
+    .table-section2{
+        margin: 30px 10px;
+        
+    }
+
+}
+
+/* Seccion beneficios  */
+@media (min-width: 620px){
+
+    .product-cards--container{
+        display: grid;
+        max-width: 900px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+    }
+
+}
+
+/* Seccion comodin */
+@media (min-width: 700px){
+    .bitcoin-img-container{
+        background-image: url('../assets/images/imagen-chica-medium.jpg');
+    }
+}
+
+
+
+/* Seccion pagos */
+
+@media (min-width: 640px){
+    .plans-container--slider{
+        justify-content: center;
+    }
+}
+
+
+
+
 
